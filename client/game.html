@@ -4,14 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kanit&family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit&family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <script href="./index.js" defer></script>
+    <script src="./index.js" defer></script>
     <title>Roman Empire Game</title>
   </head>
   <body>
@@ -21,43 +24,51 @@
         <h1 class="Game-title">Roman Grid Game</h1>
       </header>
       <section class="grid-game">
-        <button class="question">I</button>
-        <button class="question">II</button>
-        <button class="question">III</button>
-        <button class="question">IV</button>
-        <button class="question">V</button>
-        <button class="question">VI</button>
-        <button class="question">VII</button>
-        <button class="question">VIII</button>
-        <button class="question">IX</button>
-        <button class="question">X</button>
-        <button class="question">XI</button>
-        <button class="question">XII</button>
-        <button class="question">XIII</button>
-        <button class="question">XIV</button>
-        <button class="question">XV</button>
-        <button class="question">XVI</button>
-        <button class="question">XVII</button>
-        <button class="question">XVIII</button>
-        <button class="question">XIX</button>
-        <button class="question">XX</button>
-        <button class="question">XXI</button>
-        <button class="question">XXII</button>
-        <button class="question">XXIII</button>
-        <button class="question">XXIV</button>
-        <button class="question">XXV</button>
-        <button class="question">XXVI</button>
-        <button class="question">XXVII</button>
-        <button class="question">XXVIII</button>
-        <button class="question">XXIX</button>
-        <button class="question">XXX</button>
-        <button class="question">XXXI</button>
-        <button class="question">XXXII</button>
-        <button class="question">XXXIII</button>
-        <button class="question">XXXIV</button>
-        <button class="question">XXXV</button>
-        <button class="question">XXXVI</button>
+        <button class="question" id="button 1">I</button>
+        <button class="question" id="button 2">II</button>
+        <button class="question" id="button 3">III</button>
+        <button class="question" id="button 4">IV</button>
+        <button class="question" id="button 5">V</button>
+        <button class="question" id="button 6">VI</button>
+        <button class="question" id="button 7">VII</button>
+        <button class="question" id="button 8">VIII</button>
+        <button class="question" id="button 9">IX</button>
+        <button class="question" id="button 10">X</button>
+        <button class="question" id="button 11">XI</button>
+        <button class="question" id="button 12">XII</button>
+        <button class="question" id="button 13">XIII</button>
+        <button class="question" id="button 14">XIV</button>
+        <button class="question" id="button 15">XV</button>
+        <button class="question" id="button 16">XVI</button>
+        <button class="question" id="button 17">XVII</button>
+        <button class="question" id="button 18">XVIII</button>
+        <button class="question" id="button 19">XIX</button>
+        <button class="question" id="button 20">XX</button>
+        <button class="question" id="button 21">XXI</button>
+        <button class="question" id="button 22">XXII</button>
+        <button class="question" id="button 23">XXIII</button>
+        <button class="question" id="button 24">XXIV</button>
+        <button class="question" id="button 25">XXV</button>
+        <button class="question" id="button 26">XXVI</button>
+        <button class="question" id="button 27">XXVII</button>
+        <button class="question" id="button 28">XXVIII</button>
+        <button class="question" id="button 29">XXIX</button>
+        <button class="question" id="button 30">XXX</button>
+        <button class="question" id="button 31">XXXI</button>
+        <button class="question" id="button 32">XXXII</button>
+        <button class="question" id="button 33">XXXIII</button>
+        <button class="question" id="button 34">XXXIV</button>
+        <button class="question" id="button 35">XXXV</button>
+        <button class="question" id="button 36">XXXVI</button>
       </section>
+    </div>
+    <div class="popup-container hidden" id="question-popup">
+      <div class="popup">
+        <button id="close-popup" class="close-popup">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="question-info" id="question-info"></div>
+      </div>
     </div>
   </body>
 </html>
