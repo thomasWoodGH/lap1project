@@ -32,11 +32,13 @@ let d = document.querySelector('#answerD');
 for (let i = 1; i <= 36; i++) {
     const button = document.getElementById(`button ${i}`);
     if (button) {
-      button.addEventListener("click", () => {
-        generateRandomId(indexArr);
-      });
+        const onClick = () => {
+            generateRandomId(indexArr);
+            button.removeEventListener("click", onClick)
+        }
+        button.addEventListener("click", onClick)
     }
-  }
+}
   
 // document.addEventListener("DOMContentLoaded", () => {
 //   const showPopup = (questionNumber) => {
