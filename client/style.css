@@ -1,0 +1,75 @@
+body {
+  background-image: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+.game {
+  background-image: url(./roman__1_.png);
+  background-size: cover;
+  font-family: monospace;
+  padding: 1rem;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 10px 2px #3333331a;
+  border-radius: 3px;
+  overflow: hidden;
+  width: 1000px;
+}
+
+.grid-game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+}
+.question {
+  width: 150px;
+  height: 80px;
+  padding: 10px;
+  font-size: 16px;
+  background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+  color: #e71531bb;
+  border: none;
+  cursor: pointer;
+  font-family: "Libre Baskerville", serif;
+}
+.title-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.home {
+  background-color: transparent;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+.Game-title {
+  font-family: "Kanit", sans-serif;
+}
+.Rules{
+    font-family: "Libre Baskerville", serif;
+}
+ul{
+    font-family: "Kanit", sans-serif;
+}
+.Start-game-btn{
+    width: 250px;
+    height: 60px;
+    padding: 10px;
+    font-size: 16px;
+    background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+    color: #000000bb;
+    border: none;
+    cursor: pointer;
+    font-family: "Libre Baskerville", serif;
+}
