@@ -1,4 +1,5 @@
 let indexArr = Array.from({ length: 36 }, (_, i) => i + 1);
+let inQuestion = false;
 
 const generateRandomId = (indexArr) => {
   let index = Math.floor(Math.random() * indexArr.length);
@@ -33,6 +34,10 @@ for (let i = 1; i <= 36; i++) {
     const button = document.getElementById(`button ${i}`);
     if (button) {
         const onClick = () => {
+            if(inQuestion){
+                return
+            }
+            inQuestion = true;
             generateRandomId(indexArr);
             button.removeEventListener("click", onClick)
         }
