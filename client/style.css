@@ -111,3 +111,6 @@ ul{
     top: 1rem;
     right: 1rem;
 }
+.question-container ul li {
+  list-style-type: none;
+}
