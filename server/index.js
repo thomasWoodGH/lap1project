@@ -4,7 +4,6 @@ const logger = require('./logger')
 const port = 3000
 const questions = require('./questions.json')
 const app = express()
-const questions = require('./questions.json')
 
 app.use(cors())
 app.use(express.json())
