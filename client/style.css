@@ -17,7 +17,7 @@ body {
   box-shadow: 0 0 10px 2px #3333331a;
   border-radius: 3px;
   overflow: hidden;
-  width: 1000px;
+  width: 1600px;
 }
 
 .grid-game {
@@ -32,7 +32,7 @@ body {
 }
 
 .question {
-  width: 150px;
+  width: 250px;
   height: 80px;
   padding: 10px;
   font-size: 16px;
@@ -48,7 +48,8 @@ body {
 .title-rules,
 .button-container,
 .written-rules,
-.answer-container {
+.answer-container,
+.point {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -145,6 +146,11 @@ ul {
 .answer{
  white-space: nowrap;
  justify-content: space-between;
+ display:inline-block;
+ position:relative;
+ max-width: 980px;
+ margin-right: 10px;
+ 
 }
 .ansbutton {
   background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
@@ -162,12 +168,8 @@ ul {
   margin: 10px;
 }
 
-
-
-#points {
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+.img-container{
+  max-width: 300px; 
+  max-height: 200px;
 }
+
