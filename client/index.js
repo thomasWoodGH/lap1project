@@ -128,13 +128,13 @@ const displayPoints = (points) => {
       pointsImg.src = 'images/coin5.png'
       break;
     case 6:
-      pointsImg.src = 'images/decimate.png'
+      pointsImg.src = 'images/decimate.jpeg'
       break;
     case 7:
-      pointsImg.src = 'images/nero.png'
+      pointsImg.src = 'images/nero-fiddle.jpeg'
       break;
     case 8:
-      pointsImg.src = 'images/TBD.png'
+      pointsImg.src = 'images/veni-vidi-vici.jpeg'
     default:
       break;
   }
