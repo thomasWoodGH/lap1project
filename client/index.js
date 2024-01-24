@@ -37,22 +37,22 @@ const questionData = async (id) => {
 };
 
 
-for (let i = 1; i <= 36; i++) {
-  const button = document.getElementById(`button ${i}`);
-  if (button) {
-    const onClick = () => {
-      if (inQuestion) {
-        return
-      }
-      inQuestion = true;
-      pointsImg.src = "";
-      console.log(inQuestion)
-      generateRandomId(indexArr);
-      button.removeEventListener("click", onClick)
-    }
-    button.addEventListener("click", onClick)
-  }
-}
+// for (let i = 1; i <= 36; i++) {
+//   const button = document.getElementById(`button ${i}`);
+//   if (button) {
+//     const onClick = () => {
+//       if (inQuestion) {
+//         return
+//       }
+//       inQuestion = true;
+//       pointsImg.src = "";
+//       console.log(inQuestion)
+//       generateRandomId(indexArr);
+//       button.removeEventListener("click", onClick)
+//     }
+//     button.addEventListener("click", onClick)
+//   }
+// }
 const verifyAnswer = (e) => {
   if (inQuestion == true) {
     if (correctAnswer == e.target.id) {
@@ -172,9 +172,25 @@ document.addEventListener("DOMContentLoaded", () => {
   for (let i = 1; i <= 36; i++) {
     const button = document.getElementById(`button ${i}`);
     if (button) {
-      button.addEventListener("click", () => {
+       const onClick = () => {
+        if (inQuestion) {
+          return
+        }
+        inQuestion = true;
+        
+        pointsImg.src = "";
+        console.log(inQuestion)
+        generateRandomId(indexArr);
+
+        setTimeout(() => {
+          inQuestion = false; 
+      }, 6000);
+
+        button.removeEventListener("click", onClick)
         showPopup(i);
-      });
+      }
+      button.addEventListener("click", onClick);
+      
     }
   }
 
