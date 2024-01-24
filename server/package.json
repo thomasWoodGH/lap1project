@@ -1,7 +1,7 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
+  "description": "The back-end files for 'Roman Grid Game'.",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
