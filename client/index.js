@@ -3,11 +3,12 @@ let inQuestion = false;
 let correctAnswer;
 let pointValue;
 
-let Qs = document.querySelector('#quizQuestion');
-let a0 = document.querySelector('#answer0');
-let a1 = document.querySelector('#answer1');
-let a2 = document.querySelector('#answer2');
-let a3 = document.querySelector('#answer3');
+const Qs = document.querySelector('#quizQuestion');
+const a0 = document.querySelector('#answer0');
+const a1 = document.querySelector('#answer1');
+const a2 = document.querySelector('#answer2');
+const a3 = document.querySelector('#answer3');
+const pointsImg = document.querySelector('#points')
 
 const generateRandomId = (indexArr) => {
   let index = Math.floor(Math.random() * indexArr.length);
@@ -55,12 +56,35 @@ const verifyAnswer = (e) => {
   if (inQuestion == true) {
     if (correctAnswer == e.target.id) {
       alert("Answer is Correct")
+      displayPoints(pointValue)
       inQuestion = false
     }
     else {
       alert("Answer is incorrect")
       inQuestion = false
     }
+  }
+}
+
+const displayPoints = (points) => {
+  switch(points){
+    case 1:
+      pointsImg.src = 'images/coin1.png'
+      break;
+    case 2:
+      pointsImg.src = 'images/coin2.png'
+      break;
+    case 3:
+      pointsImg.src = 'images/coin3.png'
+      break;
+    case 4:
+      pointsImg.src = 'images/coin4.png'
+      break;
+    case 5:
+      pointsImg.src = 'images/coin5.png'
+      break;
+    default:
+      break;
   }
 }
 
