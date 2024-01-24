@@ -20,8 +20,9 @@
   <body>
     <div class="game">
       <header class="title-flex">
-        <button class="home"><a href="./index.html"><i class="fa-solid fa-arrow-left"></i></a></button>
+        <a href="./index.html"><button class="home"><i class="fa-solid fa-arrow-left"></i></button></a>
         <h1 class="Game-title">Roman Grid Game</h1>
+        <a href="./detailspage.html"><button class="home-button"><i class="fa-solid fa-house"></i></button></a>
       </header>
       <section class="grid-game">
         <button class="question" id="button 1">I</button>
@@ -63,15 +64,20 @@
       </section>
       <div>
         <article class="question-container">
+        <div class="title-flex">
+          <p></p>
           <h2 id="quizQuestion"></h2>
-          <div class="answer">
-          <ul>
+          <p></p>
+        </div>
+          <div class="answer-container">
+            <p></p>
+          <ul class="answer">
             <button class="ansbutton"><li id="answer0"></li></button>
             <button class="ansbutton"><li id="answer1"></li></button>
             <button class="ansbutton"><li id="answer2"></li></button>
-            <button class="ansbutton"><li id="answer3"></li></button>
-            <img id="points"></img>
+            <button class="ansbutton"><li id="answer3"></li></button> 
           </ul>
+          <img id="points"></img>
         </div>
         </article>
       </div>
