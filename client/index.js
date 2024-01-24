@@ -2,6 +2,17 @@ let indexArr = Array.from({ length: 36 }, (_, i) => i + 1);
 let inQuestion = false;
 let correctAnswer;
 
+let Qs = document.querySelector('#quizQuestion');
+let a0 = document.querySelector('#answer0');
+let a1 = document.querySelector('#answer1');
+let a2 = document.querySelector('#answer2');
+let a3 = document.querySelector('#answer3');
+
+const answer0 = a0.addEventListener("click",verifyAnswer)
+const answer1 = a1.addEventListener("click",verifyAnswer)
+const answer2 = a2.addEventListener("click",verifyAnswer)
+const answer3 = a3.addEventListener("click",verifyAnswer)
+
 const generateRandomId = (indexArr) => {
   let index = Math.floor(Math.random() * indexArr.length);
   let id = indexArr[index];
@@ -26,11 +37,6 @@ const questionData = async (id) => {
   }
 };
 
-let Qs = document.querySelector('#quizQuestion');
-let a0 = document.querySelector('#answer0');
-let a1 = document.querySelector('#answer1');
-let a2 = document.querySelector('#answer2');
-let a3 = document.querySelector('#answer3');
 
 for (let i = 1; i <= 36; i++) {
     const button = document.getElementById(`button ${i}`);
@@ -40,6 +46,7 @@ for (let i = 1; i <= 36; i++) {
                 return
             }
             inQuestion = true;
+            console.log(inQuestion)
             generateRandomId(indexArr);
             button.removeEventListener("click", onClick)
         }
@@ -47,23 +54,18 @@ for (let i = 1; i <= 36; i++) {
     }
 }
 const verifyAnswer = (e) => {
-    console.log(e.target.id);
-    if (correctAnswer == e.target.id )
-    {
+    if(inQuestion == true){
+      if (correctAnswer == e.target.id){
         alert("Answer is Correct")
-    }
-    else
-    {
+        inQuestion = false
+      }
+      else{
         alert("Answer is incorrect")
+        inQuestion = false
+      }
     }
 }
  
-
-
-const answer0 = a0.addEventListener("click",verifyAnswer)
-const answer1 = a1.addEventListener("click",verifyAnswer)
-const answer2 = a2.addEventListener("click",verifyAnswer)
-const answer3 = a3.addEventListener("click",verifyAnswer)
 
  
 // document.addEventListener("DOMContentLoaded", () => {
