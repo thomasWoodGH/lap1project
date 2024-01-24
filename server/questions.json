@@ -341,5 +341,76 @@
         "choices": ["A military campaign", "A philosopher", "A famous sword", "An era of peace"],
         "answer": 3,
         "difficulty": "Mid"
+    },
+    {
+        "questionID": 51,
+        "question": "Which city in the Roman Empire was destroyed in a volcanic eruption?",
+        "choices": ["Genoa", "Firenze", "Pompeii", "Carthage"],
+        "answer": 2,
+        "difficulty": "Easy"
+    },
+    {
+        "questionID": 52,
+        "question": "What is the name of the former slave who lead a revolt against Rome??",
+        "choices": ["Spartacus", "Petroclus", "Aeneas", "Lucretia"],
+        "answer": 0,
+        "difficulty": "Easy"
+    },
+    {
+        "questionID": 53,
+        "question": "Within Rome where were chariot races held?",
+        "choices": ["Cloaca Maxima", "Capella Sistina", "Carcere Mater", "Circus Maximus"],
+        "answer": 3,
+        "difficulty": "Mid"
+    },
+    {
+        "questionID": 54,
+        "question": "Who was the first Roman Emperor to legalise Christianity?",
+        "choices": ["Diocletian", "Decius", "Nero", "Constantine"],
+        "answer": 3,
+        "difficulty": "Hard"
+    },
+    {
+        "questionID": 55,
+        "question": "What language was spoken in Rome?",
+        "choices": ["Roman", "English", "Latin", "Italian"],
+        "answer": 2,
+        "difficulty": "Easy"
+    },
+    {
+        "questionID": 56,
+        "question": "Caligula was a nickname ofr a particular Emperor, which means little ____?",
+        "choices": ["Ears", "Nose", "Eyes", "Boots"],
+        "answer": 3,
+        "difficulty": "Mid"
+    },
+    {
+        "questionID": 57,
+        "question": "According to legend, who is the father of Romulus and Remus?",
+        "choices": ["Jupiter", "Mars", "Pluto", "Mercury"],
+        "answer": 1,
+        "difficulty": "Mid"
+    },
+    {
+        "questionID": 58,
+        "question": "Which of the following was NOT a Roman ruler?",
+        "choices": ["Otto Octavius", "Octavian Augustus", "Marcus Didius Severus Julianus", "Antoninus Pius"],
+        "answer": 0,
+        "difficulty": "Hard"
+    },
+    {
+        "questionID": 59,
+        "question": "What was the name of the Eastern Roman Empire?",
+        "choices": ["The Persian Empire", "The Byzantine Empire", "The Tueton Empire", "The Hun Empire"],
+        "answer": 1,
+        "difficulty": "Mid"
+    },
+    {
+        "questionID": 60,
+        "question": "Roughly how long was Britain under Roman rule?",
+        "choices": ["150 years", "250 years", "350 years", "450 years"],
+        "answer": 2,
+        "difficulty": "Hard"
     }
+    
 ]
