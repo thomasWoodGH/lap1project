@@ -1,17 +1,13 @@
 let indexArr = Array.from({ length: 36 }, (_, i) => i + 1);
 let inQuestion = false;
 let correctAnswer;
+let pointValue;
 
 let Qs = document.querySelector('#quizQuestion');
 let a0 = document.querySelector('#answer0');
 let a1 = document.querySelector('#answer1');
 let a2 = document.querySelector('#answer2');
 let a3 = document.querySelector('#answer3');
-
-const answer0 = a0.addEventListener("click",verifyAnswer)
-const answer1 = a1.addEventListener("click",verifyAnswer)
-const answer2 = a2.addEventListener("click",verifyAnswer)
-const answer3 = a3.addEventListener("click",verifyAnswer)
 
 const generateRandomId = (indexArr) => {
   let index = Math.floor(Math.random() * indexArr.length);
@@ -31,7 +27,9 @@ const questionData = async (id) => {
     a2.textContent = data.choices[2];
     a3.textContent = data.choices[3];
     correctAnswer = "answer" + data.answer;
-    
+    pointValue = getPointValue(data.difficulty)
+    console.log(pointValue)
+
   } catch (e) {
     console.log(e);
   }
@@ -39,35 +37,53 @@ const questionData = async (id) => {
 
 
 for (let i = 1; i <= 36; i++) {
-    const button = document.getElementById(`button ${i}`);
-    if (button) {
-        const onClick = () => {
-            if(inQuestion){
-                return
-            }
-            inQuestion = true;
-            console.log(inQuestion)
-            generateRandomId(indexArr);
-            button.removeEventListener("click", onClick)
-        }
-        button.addEventListener("click", onClick)
+  const button = document.getElementById(`button ${i}`);
+  if (button) {
+    const onClick = () => {
+      if (inQuestion) {
+        return
+      }
+      inQuestion = true;
+      console.log(inQuestion)
+      generateRandomId(indexArr);
+      button.removeEventListener("click", onClick)
     }
+    button.addEventListener("click", onClick)
+  }
 }
 const verifyAnswer = (e) => {
-    if(inQuestion == true){
-      if (correctAnswer == e.target.id){
-        alert("Answer is Correct")
-        inQuestion = false
-      }
-      else{
-        alert("Answer is incorrect")
-        inQuestion = false
-      }
+  if (inQuestion == true) {
+    if (correctAnswer == e.target.id) {
+      alert("Answer is Correct")
+      inQuestion = false
     }
+    else {
+      alert("Answer is incorrect")
+      inQuestion = false
+    }
+  }
 }
- 
 
- 
+const answer0 = a0.addEventListener("click", verifyAnswer)
+const answer1 = a1.addEventListener("click", verifyAnswer)
+const answer2 = a2.addEventListener("click", verifyAnswer)
+const answer3 = a3.addEventListener("click", verifyAnswer)
+
+const getPointValue = (difficulty) => {
+  switch(difficulty){
+    case "Easy":
+      return Math.floor(Math.random() * (3 - 1 + 1) + 1)
+    case "Mid":
+      return Math.floor(Math.random() * (4 - 2 + 1) + 2)
+    case "Hard":
+      return Math.floor(Math.random() * (5 - 3 + 1) + 3)
+    default:
+      return 0
+  }
+}
+
+
+
 // document.addEventListener("DOMContentLoaded", () => {
 //   const showPopup = (questionNumber) => {
 //     const popupContainer = document.getElementById("question-popup");
