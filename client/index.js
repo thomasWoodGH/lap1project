@@ -1,5 +1,6 @@
 let indexArr = Array.from({ length: 36 }, (_, i) => i + 1);
 let inQuestion = false;
+let correctAnswer;
 
 const generateRandomId = (indexArr) => {
   let index = Math.floor(Math.random() * indexArr.length);
@@ -14,10 +15,11 @@ const questionData = async (id) => {
     const data = await response.json();
 
     Qs.textContent = data.question;
-    a.textContent = data.choices[0];
-    b.textContent = data.choices[1];
-    c.textContent = data.choices[2];
-    d.textContent = data.choices[3];
+    a0.textContent = data.choices[0];
+    a1.textContent = data.choices[1];
+    a2.textContent = data.choices[2];
+    a3.textContent = data.choices[3];
+    correctAnswer = "answer" + data.answer;
     
   } catch (e) {
     console.log(e);
@@ -25,10 +27,10 @@ const questionData = async (id) => {
 };
 
 let Qs = document.querySelector('#quizQuestion');
-let a = document.querySelector('#answerA');
-let b = document.querySelector('#answerB');
-let c = document.querySelector('#answerC');
-let d = document.querySelector('#answerD');
+let a0 = document.querySelector('#answer0');
+let a1 = document.querySelector('#answer1');
+let a2 = document.querySelector('#answer2');
+let a3 = document.querySelector('#answer3');
 
 for (let i = 1; i <= 36; i++) {
     const button = document.getElementById(`button ${i}`);
@@ -44,7 +46,26 @@ for (let i = 1; i <= 36; i++) {
         button.addEventListener("click", onClick)
     }
 }
-  
+const verifyAnswer = (e) => {
+    console.log(e.target.id);
+    if (correctAnswer == e.target.id )
+    {
+        alert("Answer is Correct")
+    }
+    else
+    {
+        alert("Answer is incorrect")
+    }
+}
+ 
+
+
+const answer0 = a0.addEventListener("click",verifyAnswer)
+const answer1 = a1.addEventListener("click",verifyAnswer)
+const answer2 = a2.addEventListener("click",verifyAnswer)
+const answer3 = a3.addEventListener("click",verifyAnswer)
+
+ 
 // document.addEventListener("DOMContentLoaded", () => {
 //   const showPopup = (questionNumber) => {
 //     const popupContainer = document.getElementById("question-popup");
