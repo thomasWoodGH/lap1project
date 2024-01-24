@@ -18,10 +18,12 @@ app.get('/questions', (req, res) => {
 })
 
 app.get('/questions/:id', (req, res) => {
-    const selectedQuestion = questions.find(question => question.questionID == req.params.id) // finds question with matching ID to URL
+    const selectedQuestion = questions.find(question => question.questionID == req.params.id)
     selectedQuestion ? res.send(selectedQuestion) : res.status(404).send("No question found with that ID")
 })
 
-app.listen(port, () => {
+const server = app.listen(port, () => {
     console.log(`API listening on port ${port}.`);
 })
+
+module.exports = {app, server}
