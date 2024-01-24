@@ -173,6 +173,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const button = document.getElementById(`button ${i}`);
     if (button) {
        const onClick = () => {
+        
         if (inQuestion) {
           return
         }
@@ -181,15 +182,18 @@ document.addEventListener("DOMContentLoaded", () => {
         pointsImg.src = "";
         console.log(inQuestion)
         generateRandomId(indexArr);
-
+        
+        button.removeEventListener("click", onClick);
+        button.style.backgroundColor = "red";
        
-
-        button.removeEventListener("click", onClick)
         showPopup(i);
+
+        
       }
       button.addEventListener("click", onClick);
       
     }
+    button.style.backgroundColor = "red";
   }
 
   const closePopupButton = document.getElementById("close-popup");
