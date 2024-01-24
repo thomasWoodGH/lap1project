@@ -22,7 +22,7 @@
     },
     {
         "questionID": 4,
-        "question": "The First Punic War  was fought for control of which island",
+        "question": "The First Punic War was fought for control of which island?",
         "choices": ["Corsica", "Elba", "Sardinia", "Sicily"],
         "answer": 3,
         "difficulty": "Mid"
@@ -36,7 +36,7 @@
     },
     {
         "questionID": 6,
-        "question": "What was the name of the manmade channels for delivering water?",
+        "question": "What was the name of the man-made channels for delivering water?",
         "choices": ["Fluiducts", "Liquiducts", "Aquaducts", "Viaducts"],
         "answer": 2,
         "difficulty": "Easy"
@@ -64,7 +64,7 @@
     },
     {
         "questionID": 10,
-        "question": "What was the leader of the Roman empire called?",
+        "question": "What was the leader of the Roman Empire called?",
         "choices": ["Emperor", "Empress", "Caesar", "Dictator"],
         "answer": 0,
         "difficulty": "Easy"
@@ -107,7 +107,7 @@
     {
         "questionID": 16,
         "question": "Who did the rowing on a Roman galley?",
-        "choices": ["Everyone", "Legionairies", "Centurions", "Slaves"],
+        "choices": ["Everyone", "Legionnaires", "Centurions", "Slaves"],
         "answer": 1,
         "difficulty": "Mid"
     },
@@ -204,7 +204,7 @@
     },
     {
         "questionID": 30,
-        "question": "What was a hypocaust",
+        "question": "What was a hypocaust?",
         "choices": ["A Sewer System", "A Type of Building", "A Type of Vehicle", "A Central Heating System"],
         "answer": 3,
         "difficulty": "Hard"
@@ -218,7 +218,7 @@
     },
     {
         "questionID": 32,
-        "question": "Who  sacked Rome in 410AD",
+        "question": "Who sacked Rome in 410AD?",
         "choices": ["The Visigoths", "The Gauls", "The Byzantines", "The Britons"],
         "answer": 0,
         "difficulty": "Hard"
@@ -246,9 +246,100 @@
     },
     {
         "questionID": 36,
-        "question": "What was a legionaires sword called?",
+        "question": "What was a legionnaires sword called?",
         "choices": ["A Trebuchet", "A Pugio", "A Gladius", "A Hasta"],
         "answer": 2,
         "difficulty": "Hard"
+    },
+    {
+        "questionID": 37,
+        "question": "When was the Roman Empire founded?",
+        "choices": ["17AD", "27AD", "17BC", "27BC"],
+        "answer": 3,
+        "difficulty": "Mid"
+    },
+    {
+        "questionID": 38,
+        "question": "What was the name of the government body that assisted the Emperor by passing laws?",
+        "choices": ["Counsel", "Senate", "House", "Chamber"],
+        "answer": 1,
+        "difficulty": "Mid"
+    },
+    {
+        "questionID": 39,
+        "question": "What modern-day country did the Roman Empire stretch to at its peak?",
+        "choices": ["Syria", "Iran", "China", "Russia"],
+        "answer": 0,
+        "difficulty": "Hard"
+    },
+    {
+        "questionID": 40,
+        "question": "What year was Augustus Caesar born?",
+        "choices": ["40BC", "63BC", "70BC", "56BC"],
+        "answer": 1,
+        "difficulty": "Hard"
+    },
+    {
+        "questionID": 41,
+        "question": "Which Roman figure spoke these last words: \"I found Rome a city of clay but left it a city of marble.\"",
+        "choices": ["Petronius", "Hadrian", "Augustus", "Julius Caesar"],
+        "answer": 2,
+        "difficulty": "Easy"
+    },
+    {
+        "questionID": 42,
+        "question": "The use of Roman numerals severely damaged the progression of which field of study?",
+        "choices": ["Literature", "Mathematics", "Economics", "Poetry"],
+        "answer": 1,
+        "difficulty": "Easy"
+    },
+    {
+        "questionID": 43,
+        "question": "What famous venue for activities in Rome was built to honour the gods?",
+        "choices": ["The Parthenon", "The Roman Forum", "The Colosseum", "The Pantheon"],
+        "answer": 3,
+        "difficulty": "Mid"
+    },
+    {
+        "questionID": 44,
+        "question": "Which Roman Emperor stated: \"I came, I saw, I conquered.\"",
+        "choices": ["Cicero", "Marcus Aurelius", "Augustus", "Julius Caesar"],
+        "answer": 3,
+        "difficulty": "Easy"
+    },
+    {
+        "questionID": 45,
+        "question": "Under which Emperor did the Roman Empire reach its largest territorial size?",
+        "choices": ["Nero", "Trajan", "Constantine", "Julius Caesar"],
+        "answer": 1,
+        "difficulty": "Hard"
+    },
+    {
+        "questionID": 47,
+        "question": "What architectural innovation allowed the Romans to build aqueducts and the Colosseum?",
+        "choices": ["Brick", "Concrete", "Marble", "Wood"],
+        "answer": 1,
+        "difficulty": "Easy"
+    },
+    {
+        "questionID": 48,
+        "question": "Which famous Roman author wrote the epic poem \"The Aeneid\"?",
+        "choices": ["Virgil", "Horace", "Livy", "Ovid"],
+        "answer": 0,
+        "difficulty": "Hard"
+    },
+    {
+        "questionID": 49,
+        "question": "What was the purpose of an aqueduct?",
+        "choices": ["To shelter citizens", "To house armies", "To transport water", "To transport goods"],
+        "answer": 2,
+        "difficulty": "Easy"
+    },
+    {
+        "questionID": 50,
+        "question": "What is the Pax Romana?",
+        "choices": ["A military campaign", "A philosopher", "A famous sword", "An era of peace"],
+        "answer": 3,
+        "difficulty": "Mid"
     }
 ]
