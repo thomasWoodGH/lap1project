@@ -96,7 +96,7 @@ body {
   font-size: 32px;
 }
 
-ul,
+.rules,
 .game-info-para {
   font-family: "Kanit", sans-serif;
   background: rgba(255,255,255, 0.5);
@@ -106,7 +106,8 @@ ul,
   list-style-type: none;
 }
 
-.Start-game-btn {
+.Start-game-btn,
+.ansbutton {
   width: 250px;
   height: 60px;
   padding: 10px;
@@ -139,7 +140,7 @@ ul,
 }
 
 .popup {
-  background-color: #fff;
+  background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
   border-radius: 5px;
   padding: 0 2rem;
   position: relative;
@@ -171,21 +172,6 @@ ul,
  max-width: 980px;
  margin-right: 10px;
  
-}
-.ansbutton {
-  background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
-  color: #000000bb;
-  border: none;
-  cursor: pointer;
-  font-family: "Libre Baskerville", serif;
-  outline: none;
-  text-decoration: none;
-  font-size: 16px;
-  border-radius: 5px;
-  border: none;
-  font-size: 1.2rem;
-  padding: 1.5rem 3rem;
-  margin: 10px;
 }
 
 .img-container{
