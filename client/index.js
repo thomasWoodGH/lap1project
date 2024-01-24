@@ -182,9 +182,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log(inQuestion)
         generateRandomId(indexArr);
 
-        setTimeout(() => {
-          inQuestion = false; 
-      }, 6000);
+       
 
         button.removeEventListener("click", onClick)
         showPopup(i);
