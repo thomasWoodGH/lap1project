@@ -7,6 +7,7 @@ body {
   margin: 0;
   min-height: 100vh;
 }
+
 .game {
   background-image: url(images/roman__1_.png);
   background-size: cover;
@@ -29,6 +30,7 @@ body {
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 10px;
 }
+
 .question {
   width: 150px;
   height: 80px;
@@ -40,96 +42,121 @@ body {
   cursor: pointer;
   font-family: "Libre Baskerville", serif;
 }
-.title-flex {
+
+.title-flex,
+.header-rules,
+.title-rules,
+.button-container,
+.written-rules {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
 }
-.home {
+
+.written-rules {
+  font-size: 18px;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  list-style-type: none; 
+}
+
+.home,
+.home-button {
   background-color: transparent;
   border: none;
   color: rgb(0, 0, 0);
   font-size: 1.5rem;
   margin-left: 10px;
 }
+
 .Game-title {
   font-family: "Kanit", sans-serif;
 }
-.Rules{
-    font-family: "Libre Baskerville", serif;
+
+.Rules {
+  font-family: "Libre Baskerville", serif;
 }
-ul{
-    font-family: "Kanit", sans-serif;
+
+ul {
+  font-family: "Kanit", sans-serif;
 }
-.Start-game-btn{
-    width: 250px;
-    height: 60px;
-    padding: 10px;
-    font-size: 16px;
-    background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
-    color: #000000bb;
-    border: none;
-    cursor: pointer;
-    font-family: "Libre Baskerville", serif;
+
+.Start-game-btn {
+  width: 250px;
+  height: 60px;
+  padding: 10px;
+  font-size: 16px;
+  background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+  color: #000000bb;
+  border: none;
+  cursor: pointer;
+  font-family: "Libre Baskerville", serif;
+  outline: none;
 }
+
 .popup-container {
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 1000; 
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
 }
 
 .popup-container.hidden {
-    opacity: 0;
-    pointer-events: none;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .popup {
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 0 2rem;
-    position: relative;
-    overflow: none;
-    max-height: 100vh; 
-    max-width: 80vw; 
-    width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0 2rem;
+  position: relative;
+  overflow: none;
+  max-height: 100vh;
+  max-width: 80vw;
+  width: 100%;
 }
 
 .popup .close-popup {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 1.5rem;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
+
 .question-container ul li {
   list-style-type: none;
 }
 
-.ansbutton{
+.ansbutton {
   border: 1px solid black;
   color: white;
-  color:black;
-  margin-left:60px;
+  color: black;
+  margin-left: 60px;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
 }
-#quizQuestion{
-  margin-left:150px;
+
+#quizQuestion {
+  margin-left: 150px;
 }
-#points{
+
+#points {
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
