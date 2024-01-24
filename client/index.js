@@ -45,6 +45,7 @@ for (let i = 1; i <= 36; i++) {
         return
       }
       inQuestion = true;
+      pointsImg.src = "";
       console.log(inQuestion)
       generateRandomId(indexArr);
       button.removeEventListener("click", onClick)
