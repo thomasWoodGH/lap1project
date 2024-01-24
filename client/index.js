@@ -1,4 +1,4 @@
-let indexArr = Array.from({ length: 50 }, (_, i) => i + 1);
+let indexArr = Array.from({ length: 60 }, (_, i) => i + 1);
 let inQuestion = false;
 let correctAnswer;
 let pointValue;
