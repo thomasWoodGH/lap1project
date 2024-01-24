@@ -1,4 +1,4 @@
-let indexArr = Array.from({ length: 36 }, (_, i) => i + 1);
+let indexArr = Array.from({ length: 50 }, (_, i) => i + 1);
 let inQuestion = false;
 let correctAnswer;
 let pointValue;
@@ -66,6 +66,49 @@ const verifyAnswer = (e) => {
   }
 }
 
+const getPointValue = (difficulty) => {
+  let decider = Math.ceil(Math.random() * 100)
+  if (difficulty === "Easy") {
+    if (decider > 0 && decider < 76) {
+      return Math.floor(Math.random() * (3 - 1 + 1) + 1)
+    }
+    else if (decider > 75 && decider < 91) {
+      return 6
+    }
+    else {
+      return 7
+    }
+  }
+  else if (difficulty === "Mid") {
+    if (decider > 0 && decider < 76) {
+      return Math.floor(Math.random() * (4 - 2 + 1) + 2)
+    }
+    else if (decider > 75 && decider < 86) {
+      return 6
+    }
+    else if (decider > 85 && decider < 96) {
+      return 7
+    }
+    else {
+      return 8
+    }
+  }
+  else {
+    if (decider > 0 && decider < 76) {
+      return Math.floor(Math.random() * (5 - 3 + 1) + 3)
+    }
+    else if (decider > 75 && decider < 86) {
+      return 6
+    }
+    else if (decider > 85 && decider < 91) {
+      return 7
+    }
+    else {
+      return 8
+    }
+  }
+}
+
 const displayPoints = (points) => {
   switch(points){
     case 1:
@@ -83,6 +126,14 @@ const displayPoints = (points) => {
     case 5:
       pointsImg.src = 'images/coin5.png'
       break;
+    case 6:
+      pointsImg.src = 'images/decimate.png'
+      break;
+    case 7:
+      pointsImg.src = 'images/nero.png'
+      break;
+    case 8:
+      pointsImg.src = 'images/TBD.png'
     default:
       break;
   }
@@ -93,18 +144,18 @@ const answer1 = a1.addEventListener("click", verifyAnswer)
 const answer2 = a2.addEventListener("click", verifyAnswer)
 const answer3 = a3.addEventListener("click", verifyAnswer)
 
-const getPointValue = (difficulty) => {
-  switch(difficulty){
-    case "Easy":
-      return Math.floor(Math.random() * (3 - 1 + 1) + 1)
-    case "Mid":
-      return Math.floor(Math.random() * (4 - 2 + 1) + 2)
-    case "Hard":
-      return Math.floor(Math.random() * (5 - 3 + 1) + 3)
-    default:
-      return 0
-  }
-}
+// const getPointValue = (difficulty) => {
+//   switch(difficulty){
+//     case "Easy":
+//       return Math.floor(Math.random() * (3 - 1 + 1) + 1)
+//     case "Mid":
+//       return Math.floor(Math.random() * (4 - 2 + 1) + 2)
+//     case "Hard":
+//       return Math.floor(Math.random() * (5 - 3 + 1) + 3)
+//     default:
+//       return 0
+//   }
+// }
 
 
 
