@@ -196,7 +196,7 @@ body {
   max-height: 200px;
 }
 
-@media screen and (max-width:1640px){
+@media screen and (max-width:2000px){
   .answer{
     white-space: wrap;
     justify-content: space-between;
@@ -205,4 +205,20 @@ body {
     max-width: 980px;
     margin-right: 10px;
 }
+.ansbutton {
+  white-space: normal;
+  width: 200px;
+  height: 80px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid #C4AC88;
+  border-radius: 5px;
+  background-image:linear-gradient(to top, #e6b980 0%, #eacda3 100%);;
+  color: #000000bb;
+  cursor: pointer;
+  font-family: "Libre Baskerville", serif;
+  outline: none;
 }
+
+}
+
