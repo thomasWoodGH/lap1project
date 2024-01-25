@@ -1,5 +1,8 @@
 body {
-  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  
+  background-image: url(./images/roman_overlay_2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,18 +12,19 @@ body {
 }
 
 .game {
-  background-image: url(images/roman__1_.png);
-  background-size: cover;
+  
+  
   font-family: monospace;
   padding: 1rem;
-  background-repeat: no-repeat;
-  box-shadow: 0 0 10px 2px #3333331a;
+  
   border-radius: 10px;
   overflow: hidden;
-  width: 1600px;
+  max-width: 90%;
+  
 }
 
 .grid-game {
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,14 +39,15 @@ body {
   width: 250px;
   height: 80px;
   padding: 10px;
+  margin:10px;
   font-size: 24px;
   background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
   color: #39361C;
   border: none;
   cursor: pointer;
   font-family: "Libre Baskerville", serif;
-  border-radius: 5px;
-  box-shadow: 3px 3px 3px #888888;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #888888;
 }
 .ClickedButton{
   width: 250px;
@@ -68,7 +73,7 @@ body {
   justify-content: space-evenly;
 }
 
-.title-flex,
+
 .about-text,
 .header-rules,
 .title-rules,
@@ -76,6 +81,13 @@ body {
 .written-rules,
 .answer-container,
 .point {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.title-flex{
+  
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -102,7 +114,9 @@ body {
 }
 
 .Game-title {
-  font-family: "Kanit", sans-serif;
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  font-size: 60px;
 }
 
 .Rules,
