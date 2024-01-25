@@ -1,22 +1,25 @@
+*{
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+}
 body {
   
-  background-image: url(./images/roman_overlay_2.png);
+  background-image: url(./images/new_project__1_.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Poppins", sans-serif;
-  margin: 0;
+    margin: 0;
   min-height: 100vh;
+  
 }
 
 .game {
   
   
-  font-family: monospace;
-  padding: 1rem;
   
+  padding: 1rem;
   border-radius: 10px;
   overflow: hidden;
   max-width: 90%;
@@ -27,16 +30,17 @@ body {
   
   display: flex;
   justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 100%;
-  margin: 0;
+  margin: 10px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-gap: 10px;
+  grid-gap: 40px;
 }
 
 .question {
-  width: 250px;
+  width: 200px;
   height: 80px;
   padding: 10px;
   margin:10px;
@@ -45,12 +49,12 @@ body {
   color: #39361C;
   border: none;
   cursor: pointer;
-  font-family: "Libre Baskerville", serif;
+  
   border-radius: 10px;
   box-shadow: 3px 3px 5px #888888;
 }
 .ClickedButton{
-  width: 250px;
+  wwidth: 200px;
   height: 80px;
   padding: 10px;
   font-size: 24px;
@@ -58,8 +62,7 @@ body {
   color: #39361C;
   border: none;
   cursor: pointer;
-  font-family: "Libre Baskerville", serif;
-
+  
 }
 
 
@@ -121,13 +124,16 @@ body {
 
 .Rules,
 .game-info-title {
-  font-family: "Libre Baskerville", serif;
+  
   font-size: 32px;
+}
+#quizQuestion{
+  font-size: 40px;
 }
 
 .rules,
 .game-info-para {
-  font-family: "Kanit", sans-serif;
+  
   background: rgba(255,255,255, 0.5);
   padding: 15px;
   border: 2px solid black;
@@ -135,7 +141,9 @@ body {
   list-style-type: none;
   box-shadow: 3px 3px 3px #969595;
 }
-
+.fa-3x{
+  color: #c5af5e;
+}
 .Start-game-btn,
 .ansbutton {
   width: 200px;
@@ -143,11 +151,11 @@ body {
   padding: 10px;
   font-size: 24px;
   border: 2px solid #C4AC88;
-  border-radius: 5px;
-  background-image:linear-gradient(to top, #e6b980 0%, #eacda3 100%);;
+  border-radius: 20px;
+  background-image:linear-gradient(to top, #e6b980 0%, #eacda3 100%);
   color: #000000bb;
   cursor: pointer;
-  font-family: "Libre Baskerville", serif;
+  
   outline: none;
   box-shadow: 3px 3px 3px #969595;
 }
@@ -171,8 +179,8 @@ body {
 }
 
 .popup {
-  background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
-  border-radius: 5px;
+  background-image: url(./images/opaque_marble.png);
+  border-radius: 25px;
   padding: 0 2rem;
   position: relative;
   overflow: none;
@@ -210,7 +218,7 @@ body {
   max-height: 200px;
 }
 
-@media screen and (max-width:2000px){
+/* @media screen and (max-width:2000px){
   .answer{
     white-space: wrap;
     justify-content: space-between;
@@ -230,9 +238,9 @@ body {
   background-image:linear-gradient(to top, #e6b980 0%, #eacda3 100%);;
   color: #000000bb;
   cursor: pointer;
-  font-family: "Libre Baskerville", serif;
+  
   outline: none;
 }
 
-}
+} */
 
