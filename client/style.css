@@ -1,5 +1,5 @@
 body {
-  background-image: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,7 +15,7 @@ body {
   padding: 1rem;
   background-repeat: no-repeat;
   box-shadow: 0 0 10px 2px #3333331a;
-  border-radius: 3px;
+  border-radius: 10px;
   overflow: hidden;
   width: 1600px;
 }
@@ -42,13 +42,14 @@ body {
   cursor: pointer;
   font-family: "Libre Baskerville", serif;
   border-radius: 5px;
+  box-shadow: 3px 3px 3px #888888;
 }
 .ClickedButton{
   width: 250px;
   height: 80px;
   padding: 10px;
   font-size: 24px;
-  background-image: linear-gradient(to top, #FF0000 0%, #FF0000 100%);
+  background-image: linear-gradient(to top, #FF0844 0%, #FFB199 100%);
   color: #39361C;
   border: none;
   cursor: pointer;
@@ -118,21 +119,23 @@ body {
   border: 2px solid black;
   border-radius: 5px;
   list-style-type: none;
+  box-shadow: 3px 3px 3px #969595;
 }
 
 .Start-game-btn,
 .ansbutton {
-  width: 250px;
+  width: 285px;
   height: 60px;
   padding: 10px;
   font-size: 24px;
-  border: 3px solid #C4AC88;
+  border: 2px solid #C4AC88;
   border-radius: 5px;
-  background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+  background-image:linear-gradient(to top, #e6b980 0%, #eacda3 100%);;
   color: #000000bb;
   cursor: pointer;
   font-family: "Libre Baskerville", serif;
   outline: none;
+  box-shadow: 3px 3px 3px #969595;
 }
 
 .popup-container {
