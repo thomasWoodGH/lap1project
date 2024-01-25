@@ -41,6 +41,7 @@ body {
   border: none;
   cursor: pointer;
   font-family: "Libre Baskerville", serif;
+  border-radius: 5px;
 }
 .ClickedButton{
   width: 250px;
