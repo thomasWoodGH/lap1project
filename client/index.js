@@ -187,6 +187,8 @@ document.addEventListener("DOMContentLoaded", () => {
         button.style.backgroundColor = "red";
        
         showPopup(i);
+        button.classList.add("ClickedButton")
+
 
         
       }

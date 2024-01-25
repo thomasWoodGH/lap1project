@@ -42,6 +42,19 @@ body {
   cursor: pointer;
   font-family: "Libre Baskerville", serif;
 }
+.ClickedButton{
+  width: 250px;
+  height: 80px;
+  padding: 10px;
+  font-size: 24px;
+  background-image: linear-gradient(to top, #FF0000 0%, #FF0000 100%);
+  color: #39361C;
+  border: none;
+  cursor: pointer;
+  font-family: "Libre Baskerville", serif;
+
+}
+
 
 .game-info-container{
   text-align: center;
