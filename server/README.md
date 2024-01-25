@@ -8,4 +8,4 @@ Install all necessary NPM Packages by running ```npm install``` in /server.
 
 ## Instructions for use
 
-Start the server by running ```npm run dev``` after installing all packages.
+Start the server by running ```npm run server``` after installing all packages.
