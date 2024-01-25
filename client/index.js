@@ -70,10 +70,23 @@ const verifyAnswer = (e) => {
 const getPointValue = (difficulty) => {
   let decider = Math.ceil(Math.random() * 100)
   if (difficulty === "Easy") {
-    if (decider > 0 && decider < 76) {
-      return Math.floor(Math.random() * (3 - 1 + 1) + 1)
+    if (decider > 0 && decider <= 20) {
+      return 1
+      //return Math.floor(Math.random() * (3 - 1 + 1) + 1)
     }
-    else if (decider > 75 && decider < 91) {
+    else if (decider > 20 && decider <= 40) {
+      return 2
+    }
+    else if (decider > 40 && decider <= 60) {
+      return 3
+    }
+    else if (decider > 60 && decider <= 70) {
+      return 4
+    }
+    else if( decider > 70 && decider <= 75) {
+      return 5
+    }
+    else if (decider > 75 && decider <= 90) {
       return 6
     }
     else {
@@ -81,13 +94,26 @@ const getPointValue = (difficulty) => {
     }
   }
   else if (difficulty === "Mid") {
-    if (decider > 0 && decider < 76) {
-      return Math.floor(Math.random() * (4 - 2 + 1) + 2)
+    if (decider > 0 && decider <= 5) {
+      return 1
+      //return Math.floor(Math.random() * (4 - 2 + 1) + 2)
     }
-    else if (decider > 75 && decider < 86) {
+    else if (decider > 5 && decider <= 25) {
+      return 2
+    }
+    else if (decider > 25 && decider <= 45) {
+      return 3
+    }
+    else if (decider > 45 && decider <= 65) {
+      return 4
+    }
+    else if( decider > 65 && decider <= 75) {
+      return 5
+    }
+    else if (decider > 75 && decider <= 85) {
       return 6
     }
-    else if (decider > 85 && decider < 96) {
+    else if (decider > 85 && decider <= 95) {
       return 7
     }
     else {
@@ -95,13 +121,26 @@ const getPointValue = (difficulty) => {
     }
   }
   else {
-    if (decider > 0 && decider < 76) {
-      return Math.floor(Math.random() * (5 - 3 + 1) + 3)
+    if (decider > 0 && decider <= 5) {
+     return 1
+      //return Math.floor(Math.random() * (5 - 3 + 1) + 3)
     }
-    else if (decider > 75 && decider < 86) {
+    else if (decider > 5 && decider <= 15) {
+      return 2
+    }
+    else if (decider > 15 && decider <= 35) {
+      return 3
+    }
+    else if (decider > 35 && decider <= 55) {
+      return 4
+    }
+    else if( decider > 55 && decider <= 75) {
+      return 5
+    }
+    else if (decider > 75 && decider <= 85) {
       return 6
     }
-    else if (decider > 85 && decider < 91) {
+    else if (decider > 85 && decider <= 90) {
       return 7
     }
     else {
