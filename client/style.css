@@ -196,3 +196,13 @@ body {
   max-height: 200px;
 }
 
+@media screen and (max-width:1640px){
+  .answer{
+    white-space: wrap;
+    justify-content: space-between;
+    display:inline-block;
+    position:relative;
+    max-width: 980px;
+    margin-right: 10px;
+}
+}
