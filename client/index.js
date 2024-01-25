@@ -56,12 +56,14 @@ const questionData = async (id) => {
 const verifyAnswer = (e) => {
   if (inQuestion == true) {
     if (correctAnswer == e.target.id) {
-      alert("Answer is Correct")
+      //alert("Answer is Correct")
+      e.currentTarget.parentNode.style.border = "3px solid green"
       displayPoints(pointValue)
       inQuestion = false
     }
     else {
-      alert("Answer is incorrect")
+      //alert("Answer is incorrect")
+      e.currentTarget.parentNode.style.border = "3px solid red"
       inQuestion = false
     }
   }
@@ -221,6 +223,10 @@ document.addEventListener("DOMContentLoaded", () => {
         pointsImg.src = "";
         console.log(inQuestion)
         generateRandomId(indexArr);
+        a0.parentNode.style.border = "3px solid #C4AC88"
+        a1.parentNode.style.border = "3px solid #C4AC88"
+        a2.parentNode.style.border = "3px solid #C4AC88"
+        a3.parentNode.style.border = "3px solid #C4AC88"
         
         button.removeEventListener("click", onClick);
         button.style.backgroundColor = "red";
