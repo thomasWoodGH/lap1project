@@ -36,33 +36,14 @@ const questionData = async (id) => {
   }
 };
 
-
-// for (let i = 1; i <= 36; i++) {
-//   const button = document.getElementById(`button ${i}`);
-//   if (button) {
-//     const onClick = () => {
-//       if (inQuestion) {
-//         return
-//       }
-//       inQuestion = true;
-//       pointsImg.src = "";
-//       console.log(inQuestion)
-//       generateRandomId(indexArr);
-//       button.removeEventListener("click", onClick)
-//     }
-//     button.addEventListener("click", onClick)
-//   }
-// }
 const verifyAnswer = (e) => {
   if (inQuestion == true) {
     if (correctAnswer == e.target.id) {
-      //alert("Answer is Correct")
       e.currentTarget.parentNode.style.border = "3px solid green"
       displayPoints(pointValue)
       inQuestion = false
     }
     else {
-      //alert("Answer is incorrect")
       e.currentTarget.parentNode.style.border = "3px solid red"
       inQuestion = false
     }
@@ -74,7 +55,6 @@ const getPointValue = (difficulty) => {
   if (difficulty === "Easy") {
     if (decider > 0 && decider <= 20) {
       return 1
-      //return Math.floor(Math.random() * (3 - 1 + 1) + 1)
     }
     else if (decider > 20 && decider <= 40) {
       return 2
@@ -85,7 +65,7 @@ const getPointValue = (difficulty) => {
     else if (decider > 60 && decider <= 70) {
       return 4
     }
-    else if( decider > 70 && decider <= 75) {
+    else if (decider > 70 && decider <= 75) {
       return 5
     }
     else if (decider > 75 && decider <= 90) {
@@ -98,7 +78,6 @@ const getPointValue = (difficulty) => {
   else if (difficulty === "Mid") {
     if (decider > 0 && decider <= 5) {
       return 1
-      //return Math.floor(Math.random() * (4 - 2 + 1) + 2)
     }
     else if (decider > 5 && decider <= 25) {
       return 2
@@ -109,7 +88,7 @@ const getPointValue = (difficulty) => {
     else if (decider > 45 && decider <= 65) {
       return 4
     }
-    else if( decider > 65 && decider <= 75) {
+    else if (decider > 65 && decider <= 75) {
       return 5
     }
     else if (decider > 75 && decider <= 85) {
@@ -124,8 +103,7 @@ const getPointValue = (difficulty) => {
   }
   else {
     if (decider > 0 && decider <= 5) {
-     return 1
-      //return Math.floor(Math.random() * (5 - 3 + 1) + 3)
+      return 1
     }
     else if (decider > 5 && decider <= 15) {
       return 2
@@ -136,7 +114,7 @@ const getPointValue = (difficulty) => {
     else if (decider > 35 && decider <= 55) {
       return 4
     }
-    else if( decider > 55 && decider <= 75) {
+    else if (decider > 55 && decider <= 75) {
       return 5
     }
     else if (decider > 75 && decider <= 85) {
@@ -152,7 +130,7 @@ const getPointValue = (difficulty) => {
 }
 
 const displayPoints = (points) => {
-  switch(points){
+  switch (points) {
     case 1:
       pointsImg.src = 'images/coin1.png'
       break;
@@ -186,40 +164,22 @@ const answer1 = a1.addEventListener("click", verifyAnswer)
 const answer2 = a2.addEventListener("click", verifyAnswer)
 const answer3 = a3.addEventListener("click", verifyAnswer)
 
-// const getPointValue = (difficulty) => {
-//   switch(difficulty){
-//     case "Easy":
-//       return Math.floor(Math.random() * (3 - 1 + 1) + 1)
-//     case "Mid":
-//       return Math.floor(Math.random() * (4 - 2 + 1) + 2)
-//     case "Hard":
-//       return Math.floor(Math.random() * (5 - 3 + 1) + 3)
-//     default:
-//       return 0
-//   }
-// }
-
-
 
 document.addEventListener("DOMContentLoaded", () => {
   const showPopup = () => {
     const popupContainer = document.getElementById("question-popup");
     const questionInfo = document.getElementById("question-info");
-
-  
     popupContainer.classList.remove("hidden");
   };
 
   for (let i = 1; i <= 36; i++) {
     const button = document.getElementById(`button ${i}`);
     if (button) {
-       const onClick = () => {
-        
+      const onClick = () => {
         if (inQuestion) {
           return
         }
         inQuestion = true;
-        
         pointsImg.src = "";
         console.log(inQuestion)
         generateRandomId(indexArr);
@@ -227,18 +187,12 @@ document.addEventListener("DOMContentLoaded", () => {
         a1.parentNode.style.border = "3px solid #C4AC88"
         a2.parentNode.style.border = "3px solid #C4AC88"
         a3.parentNode.style.border = "3px solid #C4AC88"
-        
         button.removeEventListener("click", onClick);
         button.style.backgroundColor = "red";
-       
         showPopup(i);
         button.classList.add("ClickedButton")
-
-
-        
       }
       button.addEventListener("click", onClick);
-      
     }
     button.style.backgroundColor = "red";
   }
