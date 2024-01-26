@@ -17,8 +17,9 @@ describe("logger", () => {
 
 describe("get /", () => {
     test('responds with "Welcome to the questions API"', async () => {
-        const response = await request(app).get('/');
-        expect(response.status).toBe(200);
-        expect(response.text).toBe('Welcome to the questions API');
+        const response = await request(app).get('/')
+        expect(response.status).toBe(200)
+        expect(response.text).toBe('Welcome to the questions API')
     });
 })
+
