@@ -188,13 +188,11 @@ document.addEventListener("DOMContentLoaded", () => {
         a2.style.border = "3px solid #C4AC88"
         a3.style.border = "3px solid #C4AC88"
         button.removeEventListener("click", onClick);
-        button.style.backgroundColor = "red";
         showPopup(i);
         button.classList.add("ClickedButton")
       }
       button.addEventListener("click", onClick);
     }
-    button.style.backgroundColor = "red";
   }
 
   const closePopupButton = document.getElementById("close-popup");
