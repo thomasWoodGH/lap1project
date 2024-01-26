@@ -16,9 +16,6 @@ body {
 }
 
 .game {
-  
-  
-  
   padding: 1rem;
   border-radius: 10px;
   overflow: hidden;
@@ -51,10 +48,14 @@ body {
   cursor: pointer;
   
   border-radius: 10px;
-  box-shadow: 3px 3px 5px #888888;
+  box-shadow: 5px 5px 5px #888888;
 }
+.question:hover{
+  box-shadow: 0px 0px 0px #888888
+}
+
 .ClickedButton{
-  wwidth: 200px;
+  width: 200px;
   height: 80px;
   padding: 10px;
   font-size: 24px;
@@ -62,6 +63,7 @@ body {
   color: #39361C;
   border: none;
   cursor: pointer;
+  
   
 }
 
@@ -134,7 +136,8 @@ body {
 .rules,
 .game-info-para {
   
-  background: rgba(255,255,255, 0.5);
+  background: transparent;
+  backdrop-filter: blur(10px);
   padding: 15px;
   border: 2px solid black;
   border-radius: 5px;
@@ -142,8 +145,20 @@ body {
   box-shadow: 3px 3px 3px #969595;
 }
 .fa-3x{
-  color: #c5af5e;
+  color: #2e2c25;
+  filter: drop-shadow(7px 5px 5px #969595) 
 }
+.fa-3x:hover{
+  filter:drop-shadow(0px 0px 0px)
+}
+.fa-2x{
+  color: #2e2c25;
+  filter: drop-shadow(7px 5px 5px #969595)
+}
+.fa-2x:hover{
+  filter:drop-shadow(0px 0px 0px)
+}
+
 .Start-game-btn,
 .ansbutton {
   width: 200px;
@@ -155,11 +170,15 @@ body {
   background-image:linear-gradient(to top, #e6b980 0%, #eacda3 100%);
   color: #000000bb;
   cursor: pointer;
-  
   outline: none;
-  box-shadow: 3px 3px 3px #969595;
+  box-shadow: 4px 4px 4px #969595;
 }
-
+.ansbutton:hover{
+  box-shadow: 0px 0px 0px #969595;
+}
+.Start-game-btn:hover{
+  box-shadow: 0px 0px 0px #969595;
+}
 .popup-container {
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
@@ -197,6 +216,8 @@ body {
   position: absolute;
   top: 1rem;
   right: 1rem;
+  backdrop-filter: blur(20px);
+  filter: drop-shadow(2px 2px 2px #969595)
 }
 
 .question-container ul li {
@@ -216,6 +237,7 @@ body {
 .img-container{
   max-width: 300px; 
   max-height: 200px;
+  border-radius: 20px;
 }
 
 /* @media screen and (max-width:2000px){
