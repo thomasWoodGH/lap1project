@@ -394,7 +394,7 @@
     {
         "questionID": 58,
         "question": "Which of the following was NOT a Roman ruler?",
-        "choices": ["Otto Octavius", "Octavian Augustus", "Marcus Didius Severus Julianus", "Antoninus Pius"],
+        "choices": ["Otto Octavius", "Octavian Augustus", "Didius Julianus", "Antoninus Pius"],
         "answer": 0,
         "difficulty": "Hard"
     },
