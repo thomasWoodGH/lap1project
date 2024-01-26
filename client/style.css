@@ -193,7 +193,7 @@ body {
 }
 
 .popup {
-  background-image: url(./images/opaque_marble.png);
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   border-radius: 25px;
   padding: 0 2rem;
   position: relative;
