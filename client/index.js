@@ -168,7 +168,6 @@ const answer3 = a3.addEventListener("click", verifyAnswer)
 document.addEventListener("DOMContentLoaded", () => {
   const showPopup = () => {
     const popupContainer = document.getElementById("question-popup");
-    const questionInfo = document.getElementById("question-info");
     popupContainer.classList.remove("hidden");
   };
 
