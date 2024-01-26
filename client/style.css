@@ -1,0 +1,236 @@
+*{
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+}
+body {
+  
+  background-image: url(./images/new_project__1_.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.game {
+  padding: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 90%;
+}
+
+.grid-game {
+  
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 40px;
+}
+
+.question {
+  width: 200px;
+  height: 80px;
+  padding: 10px;
+  margin:10px;
+  font-size: 24px;
+  background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+  color: #39361C;
+  border: none;
+  cursor: pointer;
+  
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #888888;
+}
+.question:hover{
+  box-shadow: 0px 0px 0px #888888
+}
+
+.ClickedButton{
+  width: 200px;
+  height: 80px;
+  padding: 10px;
+  font-size: 24px;
+  background-image: linear-gradient(to top, #FF0844 0%, #FFB199 100%);
+  color: #39361C;
+  border: none;
+  cursor: pointer;
+}
+
+
+.game-info-container{
+  text-align: center;
+}
+
+.landing-button-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+.about-text,
+.header-rules,
+.title-rules,
+.button-container,
+.written-rules,
+.answer-container,
+.point {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.title-flex{
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.written-rules,
+.game-info-para {
+  font-size: 24px;
+  margin: 10px 0;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  list-style-type: none;
+}
+
+.home,
+.home-button {
+  background-color: transparent;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.Game-title {
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  font-size: 60px;
+}
+
+.Rules,
+.game-info-title {
+  font-size: 32px;
+}
+#quizQuestion{
+  font-size: 40px;
+}
+
+.rules,
+.game-info-para {
+  
+  background: transparent;
+  backdrop-filter: blur(10px);
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 5px;
+  list-style-type: none;
+  box-shadow: 3px 3px 3px #969595;
+}
+.fa-3x{
+  color: #2e2c25;
+  filter: drop-shadow(7px 5px 5px #969595) 
+}
+.fa-3x:hover{
+  filter:drop-shadow(0px 0px 0px)
+}
+.fa-2x{
+  color: #2e2c25;
+  filter: drop-shadow(7px 5px 5px #969595)
+}
+.fa-2x:hover{
+  filter:drop-shadow(0px 0px 0px)
+}
+
+.Start-game-btn,
+.ansbutton {
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+  font-size: 24px;
+  border: 2px solid #C4AC88;
+  border-radius: 20px;
+  background-image:linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+  color: #000000bb;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 4px 4px 4px #969595;
+}
+.ansbutton:hover{
+  box-shadow: 0px 0px 0px #969595;
+}
+.Start-game-btn:hover{
+  box-shadow: 0px 0px 0px #969595;
+}
+.popup-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.popup-container.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.popup {
+  background-image: url(./images/opaque_marble.png);
+  border-radius: 25px;
+  padding: 0 2rem;
+  position: relative;
+  overflow: none;
+  max-height: 100vh;
+  max-width: 80vw;
+  width: 100%;
+}
+
+.popup .close-popup {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  backdrop-filter: blur(20px);
+  filter: drop-shadow(2px 2px 2px #969595)
+}
+
+.question-container ul li {
+  list-style-type: none;
+}
+
+.answer{
+ white-space: nowrap;
+ justify-content: space-between;
+ display:inline-block;
+ position:relative;
+ max-width: 980px;
+ margin-right: 10px;
+ 
+}
+
+.img-container{
+  max-width: 300px; 
+  max-height: 200px;
+  border-radius: 20px;
+}

@@ -1,0 +1,416 @@
+[
+    {
+        "questionID": 1,
+        "question": "What year was Rome founded?",
+        "choices": ["753BC", "853BC", "703BC", "803BC"],
+        "answer": 0,
+        "difficulty": "Hard"
+    },
+    {
+        "questionID": 2,
+        "question": "Who founded Rome?",
+        "choices": ["Julius Caesar", "Romulus", "Remus", "Aeneas"],
+        "answer": 1,
+        "difficulty": "Easy"
+    },
+    {
+        "questionID": 3,
+        "question": "What year was the Roman Republic established?",
+        "choices": ["509BC", "409BC", "309BC", "609BC"],
+        "answer": 0,
+        "difficulty": "Mid"
+    },
+    {
+        "questionID": 4,
+        "question": "The First Punic War was fought for control of which island?",
+        "choices": ["Corsica", "Elba", "Sardinia", "Sicily"],
+        "answer": 3,
+        "difficulty": "Mid"
+    },
+    {
+        "questionID": 5,
+        "question": "Which animal was the parent of Romulus and Remus?",
+        "choices": ["Bear", "Deer", "Wolf", "Eagle"],
+        "answer": 2,
+        "difficulty": "Easy"
+    },
+    {
+        "questionID": 6,
+        "question": "What was the name of the man-made channels for delivering water?",
+        "choices": ["Fluiducts", "Liquiducts", "Aquaducts", "Viaducts"],
+        "answer": 2,
+        "difficulty": "Easy"
+    },
+    {
+        "questionID": 7,
+        "question": "What term referred to people living outside the Roman Empire?",
+        "choices": ["Gaul", "Troglodyte", "Savages", "Barbarian"],
+        "answer": 3,
+        "difficulty": "Mid"
+    },
+    {
+        "questionID": 8,
+        "question": "What is a centurion?",
+        "choices": ["A Soldier", "A Politician", "An Historian", "An Artisan"],
+        "answer": 0,
+        "difficulty": "Mid"
+    },
+    {
+        "questionID": 9,
+        "question": "What was the highest electable position in the Roman Government?",
+        "choices": ["Dictator", "Consul", "President", "Prime Minister"],
+        "answer": 1,
+        "difficulty": "Mid"
+    },
+    {
+        "questionID": 10,
+        "question": "What was the leader of the Roman Empire called?",
+        "choices": ["Emperor", "Empress", "Caesar", "Dictator"],
+        "answer": 0,
+        "difficulty": "Easy"
+    },
+    {
+        "questionID": 11,
+        "question": "Who was the first Emperor of Rome?",
+        "choices": ["Nero", "Marcus Aurelius", "Augustus", "Caesar"],
+        "answer": 2,
+        "difficulty": "Hard"
+    },
+    {
+        "questionID": 12,
+        "question": "Which river is the city of Rome built on?",
+        "choices": ["Arno", "Rhone", "Danube", "Tiber"],
+        "answer": 3,
+        "difficulty": "Easy"
+    },
+    {
+        "questionID": 13,
+        "question": "What was Venus the Roman goddess of?",
+        "choices": ["Strategy and Warfare", "Love and Beauty", "Hunting and Nature", "Hearth and Home"],
+        "answer": 1,
+        "difficulty": "Mid"
+    },
+    {
+        "questionID": 14,
+        "question": "Which country did Julius Caesar conquer?",
+        "choices": ["Ireland", "Britain", "Carthage", "Gaul"],
+        "answer": 3,
+        "difficulty": "Hard"
+    },
+    {
+        "questionID": 15,
+        "question": "What is a legionnaires helmet called?",
+        "choices": ["Scutum", "Galea", "Brigand", "Capitula"],
+        "answer": 1,
+        "difficulty": "Hard"
+    },
+    {
+        "questionID": 16,
+        "question": "Who did the rowing on a Roman galley?",
+        "choices": ["Everyone", "Legionnaires", "Centurions", "Slaves"],
+        "answer": 1,
+        "difficulty": "Mid"
+    },
+    {
+        "questionID": 17,
+        "question": "What mountain range did Hannibal cross with his elephants?",
+        "choices": ["The Andes", "The Himalayas", "The Atlas", "The Alps"],
+        "answer": 3,
+        "difficulty": "Mid"
+    },
+    {
+        "questionID": 18,
+        "question": "Who ruled Rome when it was founded?",
+        "choices": ["King", "Emperor", "Senator", "Consul"],
+        "answer": 0,
+        "difficulty": "Hard"
+    },
+    {
+        "questionID": 19,
+        "question": "Who was Mark Antony's wife?",
+        "choices": ["Cleopatra I", "Cleopatra III", "Cleopatra V", "Cleopatra VII"],
+        "answer": 3,
+        "difficulty": "Hard"
+    },
+    {
+        "questionID": 20,
+        "question": "Which Emperor conquered Britain?",
+        "choices": ["Caligula", "Claudius", "Hadrian", "Julius Caesar"],
+        "answer": 1,
+        "difficulty": "Mid"
+    },
+    {
+        "questionID": 21,
+        "question": "What was the Roman name for England",
+        "choices": ["Britannia", "Albion", "Caledonia", "Angleland"],
+        "answer": 0,
+        "difficulty": "Easy"
+    },
+    {
+        "questionID": 22,
+        "question": "What was the Roman name for Scotland?",
+        "choices": ["Celtica", "Hibernia", "Albion", "Caledonia"],
+        "answer": 3,
+        "difficulty": "Mid"
+    },
+    {
+        "questionID": 23,
+        "question": "What was the Roman name for Ireland?",
+        "choices": ["Hibernia", "Eire", "Celtica", "Eirrendia"],
+        "answer": 0,
+        "difficulty": "Mid"
+    },
+    {
+        "questionID": 24,
+        "question": "What modern city was Boudica the leader of?",
+        "choices": ["London", "Norfolk", "Bristol", "Newcastle"],
+        "answer": 1,
+        "difficulty": "Hard"
+    },
+    {
+        "questionID": 25,
+        "question": "Which of these was a roman coin?",
+        "choices": ["Drachma", "Shekel", "Denarius", "Daric"],
+        "answer": 2,
+        "difficulty": "Mid"
+    },
+    {
+        "questionID": 26,
+        "question": "What was the name of the centre of a Roman town, where news was announced?",
+        "choices": ["Amphitheater", "Forum", "Square", "Plaza"],
+        "answer": 1,
+        "difficulty": "Easy"
+    },
+    {
+        "questionID": 27,
+        "question": "What were the largest Roman houses called?",
+        "choices": ["Castles", "Villas", "Lodges", "Cottages"],
+        "answer": 1,
+        "difficulty": "Easy"
+    },
+    {
+        "questionID": 28,
+        "question": "What did the Romans write with at school?",
+        "choices": ["Papyrus and Quill", "Wax Tablet and Stylus", "Blackboard and Chalk", "Paper and Pencil"],
+        "answer": 1,
+        "difficulty": "Mid"
+    },
+    {
+        "questionID": 29,
+        "question": "How were Roman towns laid out?",
+        "choices": ["In A Grid", "In Waves", "In Circles", "In Parallel Lines"],
+        "answer": 0,
+        "difficulty": "Mid"
+    },
+    {
+        "questionID": 30,
+        "question": "What was a hypocaust?",
+        "choices": ["A Sewer System", "A Type of Building", "A Type of Vehicle", "A Central Heating System"],
+        "answer": 3,
+        "difficulty": "Hard"
+    },
+    {
+        "questionID": 31,
+        "question": "Who was the God of the Sea?",
+        "choices": ["Saturn", "Mercury", "Jupiter", "Neptune"],
+        "answer": 3,
+        "difficulty": "Easy"
+    },
+    {
+        "questionID": 32,
+        "question": "Who sacked Rome in 410AD?",
+        "choices": ["The Visigoths", "The Gauls", "The Byzantines", "The Britons"],
+        "answer": 0,
+        "difficulty": "Hard"
+    },
+    {
+        "questionID": 33,
+        "question": "Who was the last Roman Emperor?",
+        "choices": ["Romulus Augusts", "Marcus Aurelius", "Nero", "Caligula"],
+        "answer": 0,
+        "difficulty": "Hard"
+    },
+    {
+        "questionID": 34,
+        "question": "Which of these Roman Gods has a month named after them?",
+        "choices": ["Janus", "Octavius", "Decebria", "Julius Caesar"],
+        "answer": 0,
+        "difficulty": "Hard"
+    },
+    {
+        "questionID": 35,
+        "question": "How long were Roman Legionaries expected to fight?",
+        "choices": ["1 Year", "20 Years", "5 Years", "22 Years"],
+        "answer": 1,
+        "difficulty": "Mid"
+    },
+    {
+        "questionID": 36,
+        "question": "What was a legionnaires sword called?",
+        "choices": ["A Trebuchet", "A Pugio", "A Gladius", "A Hasta"],
+        "answer": 2,
+        "difficulty": "Hard"
+    },
+    {
+        "questionID": 37,
+        "question": "When was the Roman Empire founded?",
+        "choices": ["17AD", "27AD", "17BC", "27BC"],
+        "answer": 3,
+        "difficulty": "Mid"
+    },
+    {
+        "questionID": 38,
+        "question": "What was the name of the government body that assisted the Emperor by passing laws?",
+        "choices": ["Counsel", "Senate", "House", "Chamber"],
+        "answer": 1,
+        "difficulty": "Mid"
+    },
+    {
+        "questionID": 39,
+        "question": "What modern-day country did the Roman Empire stretch to at its peak?",
+        "choices": ["Syria", "Iran", "China", "Russia"],
+        "answer": 0,
+        "difficulty": "Hard"
+    },
+    {
+        "questionID": 40,
+        "question": "What year was Augustus Caesar born?",
+        "choices": ["40BC", "63BC", "70BC", "56BC"],
+        "answer": 1,
+        "difficulty": "Hard"
+    },
+    {
+        "questionID": 41,
+        "question": "Which Roman figure spoke these last words: \"I found Rome a city of clay but left it a city of marble.\"",
+        "choices": ["Petronius", "Hadrian", "Augustus", "Julius Caesar"],
+        "answer": 2,
+        "difficulty": "Easy"
+    },
+    {
+        "questionID": 42,
+        "question": "The use of Roman numerals severely damaged the progression of which field of study?",
+        "choices": ["Literature", "Mathematics", "Economics", "Poetry"],
+        "answer": 1,
+        "difficulty": "Easy"
+    },
+    {
+        "questionID": 43,
+        "question": "What famous venue for activities in Rome was built to honour the gods?",
+        "choices": ["The Parthenon", "The Roman Forum", "The Colosseum", "The Pantheon"],
+        "answer": 3,
+        "difficulty": "Mid"
+    },
+    {
+        "questionID": 44,
+        "question": "Which Roman Emperor stated: \"I came, I saw, I conquered.\"",
+        "choices": ["Cicero", "Marcus Aurelius", "Augustus", "Julius Caesar"],
+        "answer": 3,
+        "difficulty": "Easy"
+    },
+    {
+        "questionID": 45,
+        "question": "Under which Emperor did the Roman Empire reach its largest territorial size?",
+        "choices": ["Nero", "Trajan", "Constantine", "Julius Caesar"],
+        "answer": 1,
+        "difficulty": "Hard"
+    },
+    {
+        "questionID": 47,
+        "question": "What architectural innovation allowed the Romans to build aqueducts and the Colosseum?",
+        "choices": ["Brick", "Concrete", "Marble", "Wood"],
+        "answer": 1,
+        "difficulty": "Easy"
+    },
+    {
+        "questionID": 48,
+        "question": "Which famous Roman author wrote the epic poem \"The Aeneid\"?",
+        "choices": ["Virgil", "Horace", "Livy", "Ovid"],
+        "answer": 0,
+        "difficulty": "Hard"
+    },
+    {
+        "questionID": 49,
+        "question": "What was the purpose of an aqueduct?",
+        "choices": ["To shelter citizens", "To house armies", "To transport water", "To transport goods"],
+        "answer": 2,
+        "difficulty": "Easy"
+    },
+    {
+        "questionID": 50,
+        "question": "What is the Pax Romana?",
+        "choices": ["A military campaign", "A philosopher", "A famous sword", "An era of peace"],
+        "answer": 3,
+        "difficulty": "Mid"
+    },
+    {
+        "questionID": 51,
+        "question": "Which city in the Roman Empire was destroyed in a volcanic eruption?",
+        "choices": ["Genoa", "Firenze", "Pompeii", "Carthage"],
+        "answer": 2,
+        "difficulty": "Easy"
+    },
+    {
+        "questionID": 52,
+        "question": "What is the name of the former slave who lead a revolt against Rome??",
+        "choices": ["Spartacus", "Petroclus", "Aeneas", "Lucretia"],
+        "answer": 0,
+        "difficulty": "Easy"
+    },
+    {
+        "questionID": 53,
+        "question": "Within Rome where were chariot races held?",
+        "choices": ["Cloaca Maxima", "Capella Sistina", "Carcere Mater", "Circus Maximus"],
+        "answer": 3,
+        "difficulty": "Mid"
+    },
+    {
+        "questionID": 54,
+        "question": "Who was the first Roman Emperor to legalise Christianity?",
+        "choices": ["Diocletian", "Decius", "Nero", "Constantine"],
+        "answer": 3,
+        "difficulty": "Hard"
+    },
+    {
+        "questionID": 55,
+        "question": "What language was spoken in Rome?",
+        "choices": ["Roman", "English", "Latin", "Italian"],
+        "answer": 2,
+        "difficulty": "Easy"
+    },
+    {
+        "questionID": 56,
+        "question": "Caligula was a nickname ofr a particular Emperor, which means little ____?",
+        "choices": ["Ears", "Nose", "Eyes", "Boots"],
+        "answer": 3,
+        "difficulty": "Mid"
+    },
+    {
+        "questionID": 57,
+        "question": "According to legend, who is the father of Romulus and Remus?",
+        "choices": ["Jupiter", "Mars", "Pluto", "Mercury"],
+        "answer": 1,
+        "difficulty": "Mid"
+    },
+    {
+        "questionID": 58,
+        "question": "Which of the following was NOT a Roman ruler?",
+        "choices": ["Otto Octavius", "Octavian Augustus", "Didius Julianus", "Antoninus Pius"],
+        "answer": 0,
+        "difficulty": "Hard"
+    },
+    {
+        "questionID": 59,
+        "question": "What was the name of the Eastern Roman Empire?",
+        "choices": ["The Persian Empire", "The Byzantine Empire", "The Tueton Empire", "The Hun Empire"],
+        "answer": 1,
+        "difficulty": "Mid"
+    },
+    {
+        "questionID": 60,
+        "question": "Roughly how long was Britain under Roman rule?",
+        "choices": ["150 years", "250 years", "350 years", "450 years"],
+        "answer": 2,
+        "difficulty": "Hard"
+    }
+    
+]
